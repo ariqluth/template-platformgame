@@ -872,6 +872,26 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx_coin.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "coin.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "hurt.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hurt.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -992,13 +1012,24 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8700232859857358,
+        "zoomFactor": 1.1343715797161038,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "Score",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "tambah_Score",
+          "type": "number",
+          "value": 1
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -1323,13 +1354,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 9,
           "layer": "",
           "name": "Platform_moving",
           "persistentUuid": "d832944a-5f10-4d8c-83cf-cc616b47e06e",
-          "width": 0,
+          "width": 32,
           "x": 624,
           "y": 336,
           "zOrder": 9,
@@ -1349,6 +1380,166 @@
           "x": 480,
           "y": 432,
           "zOrder": 97,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "cd1f5af9-39fc-4b20-bb52-79048bc778ff",
+          "width": 0,
+          "x": 784,
+          "y": 416,
+          "zOrder": 98,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "9256e699-59ee-4a53-a939-e3b2b7aba3a8",
+          "width": 0,
+          "x": 640,
+          "y": 416,
+          "zOrder": 99,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "9a4fe3a8-54bc-4ec0-9a9c-6e05e4eb341e",
+          "width": 0,
+          "x": 528,
+          "y": 432,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "a546e347-09dc-4313-8a15-85dfbf18e1d2",
+          "width": 0,
+          "x": 560,
+          "y": 320,
+          "zOrder": 101,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "0e3401af-d7cd-4857-9739-6d29f6f94400",
+          "width": 0,
+          "x": 848,
+          "y": 304,
+          "zOrder": 102,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 45,
+          "layer": "UI",
+          "name": "UI_Score",
+          "persistentUuid": "26337b2f-3902-448c-be7f-ed8d7cd0c3a8",
+          "width": 500,
+          "x": 16,
+          "y": 16,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Enemy",
+          "persistentUuid": "b150c33b-3980-43c1-83ac-fdd7fb9ab534",
+          "width": 0,
+          "x": 704,
+          "y": 408,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 16,
+          "layer": "",
+          "name": "Platform_Dirt",
+          "persistentUuid": "f576d744-61eb-4d9e-a353-aad05e502e78",
+          "width": 112,
+          "x": 512,
+          "y": 336,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 16,
+          "layer": "",
+          "name": "Boundary",
+          "persistentUuid": "a5f8fc46-27c7-49bf-945a-55010f907195",
+          "width": 448,
+          "x": 384,
+          "y": 528,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 8,
+          "layer": "",
+          "name": "Tutorial",
+          "persistentUuid": "e3cdfb74-37ff-4d29-8da1-a56836b563e5",
+          "width": 91,
+          "x": 419,
+          "y": 384,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1381,6 +1572,9 @@
               "Flippable": "Flippable"
             },
             {
+              "isFolded": true,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 400,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -1388,15 +1582,12 @@
               "deceleration": 1500,
               "gravity": 300,
               "ignoreDefaultControls": false,
-              "isFolded": true,
               "jumpSpeed": 170,
               "jumpSustainTime": 0.15,
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 399,
               "maxSpeed": 100,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "useRepeatedJump": false,
               "xGrabTolerance": 10,
@@ -1457,167 +1648,11 @@
           ],
           "animations": [
             {
-              "name": "Death",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.15,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Knight-Death1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 9,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 28
-                          },
-                          {
-                            "x": 9,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Knight-Death2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 9,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 28
-                          },
-                          {
-                            "x": 9,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Knight-Death3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 9,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 28
-                          },
-                          {
-                            "x": 9,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Knight-Death4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 9,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 9
-                          },
-                          {
-                            "x": 22,
-                            "y": 28
-                          },
-                          {
-                            "x": 9,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "Idle",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "timeBetweenFrames": 0.15,
                   "sprites": [
                     {
@@ -1769,7 +1804,163 @@
               ]
             },
             {
-              "name": "Roll",
+              "name": "Death",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Knight-Death1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Knight-Death2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Knight-Death3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Knight-Death4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 9
+                          },
+                          {
+                            "x": 22,
+                            "y": 28
+                          },
+                          {
+                            "x": 9,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Jump",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2587,13 +2778,19 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Coin",
           "persistentUuid": "a52169fd-bce5-4b8a-9737-a51b37907e34",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "score",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -2603,7 +2800,7 @@
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.16,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -3044,7 +3241,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy",
           "persistentUuid": "54f35f6d-2517-4f69-8eee-27cf6b96854d",
@@ -3052,20 +3249,48 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "ignoreDefaultControls": true,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "canGrabWithoutMoving": false,
+              "useRepeatedJump": true,
+              "acceleration": 400,
+              "canGoDownFromJumpthru": true,
+              "canGrabPlatforms": false,
+              "deceleration": 1500,
+              "gravity": 300,
+              "jumpSpeed": 170,
+              "jumpSustainTime": 0.15,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 400,
+              "maxSpeed": 40,
+              "slopeMaxAngle": 60,
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
-              "name": "idle",
+              "name": "Walk",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.15,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "slime_green_walk1.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Checker",
+                          "x": 24,
+                          "y": 18
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -3101,7 +3326,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "slime_green_walk2.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Checker",
+                          "x": 24,
+                          "y": 18
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -3137,7 +3368,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "slime_green_walk3.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Checker",
+                          "x": 24,
+                          "y": 18
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -3173,7 +3410,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "slime_green_walk4.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Checker",
+                          "x": 24,
+                          "y": 18
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -3213,7 +3456,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Boundary",
           "persistentUuid": "d835cb07-b027-4c0b-931a-e477892aa869",
@@ -3285,10 +3528,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -3305,10 +3548,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -3325,10 +3568,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
             },
             {
@@ -3362,10 +3605,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -3382,10 +3625,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -3402,10 +3645,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
           ]
@@ -3503,9 +3746,9 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Tutorial",
+            "text": "Jump Up Here",
             "opacity": 255,
-            "scale": 1,
+            "scale": 0.5,
             "fontSize": 20,
             "tint": "255;255;255",
             "bitmapFontResourceName": "PixelOperator8-Bold.fnt",
@@ -3523,9 +3766,9 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "UI_Score",
+            "text": "Score: 0",
             "opacity": 255,
-            "scale": 1,
+            "scale": 3,
             "fontSize": 20,
             "tint": "255;255;255",
             "bitmapFontResourceName": "PixelOperator8-Bold.fnt",
@@ -3613,46 +3856,6 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "Coins",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Coins",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "PickupCoin",
-                "",
-                "80",
-                "RandomFloatInRange(1,1.1)"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "SceneJustBegins"
               },
               "parameters": [
@@ -3699,9 +3902,355 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "player mengambil coin"
+        },
+        {
+          "aiGeneratedEventId": "01KS8GR0MMWCEFCMN1SJ8SJ7HR",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Coin",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Coin",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "UI_Score",
+                "Text",
+                "=",
+                "\"Score: \" + ToString(Score)"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "coin.wav",
+                "no",
+                "50",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Enemy Control"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Enemy",
+                "Flippable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Enemy",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionPoint"
+                  },
+                  "parameters": [
+                    "Platform_Stone",
+                    "Enemy.PointX(\"Checker\")",
+                    "Enemy.PointY(\"Checker\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Flippable",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Enemy",
+                "Flippable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "Enemy",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionPoint"
+                  },
+                  "parameters": [
+                    "Platform_Stone",
+                    "Enemy.PointX(\"Checker\")",
+                    "Enemy.PointY(\"Checker\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Camera boundaries"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "Player.X()-1000",
+                "Player.Y()-1000",
+                "Player.X()+1000",
+                "Boundary.Y()",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Player dies"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Enemy",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Player",
+                    ">",
+                    "Boundary.Y()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"Death\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"Death\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "hurt.wav",
+                "",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game Scene\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -3765,6 +4314,24 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "MobileControls",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
